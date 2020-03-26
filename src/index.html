@@ -17,6 +17,38 @@
       </main>
       <footer></footer>
     </div>
-    <script src="./base/ap/index.js"></script>
+    <script type="module" src="./dp/index.js"></script>
+    <!-- <script>
+      const Image = (function() {
+        const img = document.createElement("img");
+        document.body.appendChild(img);
+
+        const setImgSrc = function(url) {
+          img.src = url;
+        };
+        return {
+          setImgSrc
+        };
+      })();
+
+      const ProxyImage = (function() {
+        const proxyImg = document.createElement("img");
+        proxyImg.onload = function() {
+          Image.setImgSrc(this.src);
+        };
+        const proxySetImg = function(url) {
+          proxyImg.src = url;
+          Image.setImgSrc("./dp/30.gif");
+        };
+
+        return {
+          proxySetImg
+        };
+      })();
+
+      ProxyImage.proxySetImg(
+        "https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?cs=srgb&dl=pexels-220201.jpg&fm=jpg"
+      );
+    </script> -->
   </body>
 </html>
